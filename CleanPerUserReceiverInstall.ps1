@@ -271,13 +271,13 @@ ForEach ($Profile in $ProfileList) {
 	}
 }
 
-Write-Host ""
+#Write-Host ""
 
-Write-Host "Running Citrix Reciever Cleanup Utility..."
+#Write-Host "Running Citrix Reciever Cleanup Utility..."
 
-Start-Process -FilePath $CtxRCUPath -ArgumentList '/silent /disableCEIP' -Wait
+#Start-Process -FilePath $CtxRCUPath -ArgumentList '/silent /disableCEIP' -Wait
 
-Write-Host ""
+#Write-Host ""
 
 ForEach ($Profile in $ProfileList) {
 	Write-Host "Running post-RCU registry cleanup for username: $($Profile.Username)"
